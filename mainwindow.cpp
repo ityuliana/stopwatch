@@ -9,7 +9,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    this->setWindowTitle("StopWatch");
+    
     timer = new QTimer(this);
     currentTime = QTime(0,0,0);
     ui->timeEdit->setDisplayFormat("hh:mm:ss");
